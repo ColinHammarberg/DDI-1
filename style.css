@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+@import url("https://fonts.googleapis.com/css?family=Lora");
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+/* Setting default heading & paragraph settings */
+
+h1 {
+  font-family: "Lora";
+}
+
+h2 {
+  font-family: "Lora";
+}
+
+h3 {
+  font-family: "Lora";
+}
+
+h4 {
+  font-family: "Lora";
+}
+
+h5 {
+  font-family: "Lora";
+}
+
+h6 {
+  font-family: "Lora";
+}
+
+p {
+  font-family: "Playfair Display";
+}
+
+a {
+  font-family: "Playfair Display";
+}
+
+.white-space {
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.logo-2 {
+  display: none;
+}
+
+.logo-3 {
+  display: none;
+}
+
+/* Ending setting default heading & paragraph settings */
+
+:root {
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #23417f, #23417f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+header a {
+  font-size: 0.95em;
+  color: #fdb514;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4a98d1;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fdb514;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 0.9em;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header {
+  background: #fdb514;
+  /* fallback for old browsers */
+  background: var(--bggradient);
+}
+
+header .container .col-md-7 {
+  font-family: "Lora";
+  color: #4a98d1;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+  color: #fdb514;
+  font-family: "Lora";
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+  color: #4a98d1;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+  color: #4a98d1;
+}
+
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #fdb514;
+}
+
+/********** section 1 **************/
+
+.section-1 {
+  padding: 20vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 7vmin;
+  left: -18vmin;
+  background: white;
+  border-radius: 3px;
+  text-align: left;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*  Section 2  */
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url("https://via.tt.se/data/images/00500/d1a34246-a2c4-4949-bc87-8fdd4b6c0b64.jpg")
+    center center;
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.cover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.cover .content {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 19vmin;
+}
+
+.cover .content > h1 {
+  font-size: 6vmin;
+  color: whitesmoke;
+}
+
+.cover .content > p {
+  font-size: 2vmin;
+  color: #e5e5e5;
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.numbers {
+  margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: #fdb514;
+}
+
+.purchase > h1 {
+  padding-top: 15vmin;
+  padding-bottom: 0.1em;
+}
+
+.purchase > p {
+  color: var(--light-black);
+  font-size: 3vmin;
+  padding-bottom: 10vmin;
+}
+
+.purchase .cards .card {
+  width: 22rem;
+  margin: 3vmin 3vmin;
+}
+
+.cards div {
+  padding: 0;
+  margin: 0;
+}
+
+.cards .title {
+  background: rgba(208, 241, 241, 0.199);
+  padding: 1.4em 2.5em;
+  font-size: 2vmin;
+}
+
+.card .card-text {
+  padding: 2.5rem 3rem;
+  color: var(--light-black);
+}
+
+.card-body .pricing {
+  background: rgba(208, 241, 241, 0.199);
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+}
+
+.card-body .pricing > h1 {
+  font-size: 10vmin;
+  padding: 1em 0.5em;
+}
+
+/* Section 3 */
+
+.section-3 {
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: var(--bggradient);
+}
+
+.section-3 .col-md-12 > h1 {
+  padding: 2em 0 0.5em 0;
+  color: whitesmoke;
+  font-size: 6vmin;
+}
+
+.section-3 .col-md-12 > p {
+  padding: 0 4em;
+  padding-bottom: 2em;
+  color: var(--light-gray);
+  font-size: 3vmin;
+}
+
+.section-3 .desktop {
+  background: white;
+  display: inline-block;
+  border-radius: 3em;
+  padding: 2vmin 4.5vmin;
+  margin: 1em;
+}
+
+.section-3 .desktop h3 {
+  font-size: 4vmin;
+}
+
+.section-3 .desktop p {
+  font-size: 2vmin;
+}
+
+/* Section Team */
+
+.section-4 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+}
+
+.section-4 .team {
+  padding: 10vmin 4vmin;
+}
+
+.section-4 .card {
+  width: 22em;
+  margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card-body > a {
+  font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3rem;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #fdb514;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #fdb514;
+}
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+
+/* Log-in / Register page input section fields */
+
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.login-form-1 {
+  padding: 9%;
+  background: #fdb514;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3 {
+  text-align: center;
+  margin-bottom: 12%;
+  color: #fff;
+  font-family: "Lora";
+}
+.login-form-2 {
+  padding: 9%;
+  background: #4a98d1;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3 {
+  text-align: center;
+  margin-bottom: 12%;
+  color: #fff;
+  font-family: "Lora";
+}
+.btnSubmit {
+  font-weight: 600;
+  width: 50%;
+  color: #282726;
+  background-color: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  font-family: "Playfair Display";
+}
+.btnForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btnForgetPwd:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Upload files global portal */
+
+.upload-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.upload-form {
+  padding: 9%;
+  background: #23417f;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.upload-form h3 {
+  text-align: center;
+  margin-bottom: 12%;
+  color: #fdb514;
+  font-family: "Lora";
+}
+
+.upload-input {
+  max-width: 50%;
+  margin: auto;
+  font-family: "Playfair Display";
+}
+
+.input-group {
+  max-width: 50%;
+  margin: auto;
+  font-family: "Playfair Display";
+}
+
+.btnSubmit {
+  font-weight: 600;
+  width: 25%;
+  color: #282726;
+  background-color: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1%;
+  font-family: "Playfair Display";
+}
+
+.btnSubmit:hover {
+  background-color: #fdb514;
+}
+
+.upload-btn {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.btnForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btnForgetPwd:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Projects Page + Search Bar */
+
+.projects {
+  margin-top: 100px;
+}
+
+.search {
+  padding-top: 40px;
+  width: 50%;
+}
+
+.btn-outline-primary {
+  font-weight: 600;
+  width: 10%;
+  color: #282726;
+  background-color: #fdb514;
+  border: none;
+  margin-left: 10px;
+  font-family: "Playfair Display";
+}
+
+.btn-outline-primary:hover {
+  font-weight: 600;
+  width: 10%;
+  color: #282726;
+  background-color: #4a98d1;
+}
+
+.btn-outline-project {
+  background-color: #fdb514;
+}
+
+.btn-outline-project:hover {
+  background-color: #4a98d1;
+}
+
+.btn-outline-project-2 {
+  background-color: #4a98d1;
+}
+
+.btn-outline-project-2:hover {
+  background-color: #fdb514;
+}
+
+.card-text {
+  text-align: left;
+}
