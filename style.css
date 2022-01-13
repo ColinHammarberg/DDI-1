@@ -549,8 +549,7 @@ footer .column i + i {
 .btn-outline-primary:hover {
   font-weight: 600;
   width: 10%;
-  color: #282726;
-  background-color: #4a98d1;
+  color: #000000;
 }
 
 .btn-outline-project {
